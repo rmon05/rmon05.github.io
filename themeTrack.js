@@ -1,9 +1,9 @@
 function setTheme(theme){ 
     if(theme == "0"){
-        document.getElementById("wallpaper").setAttribute("href", "../CSS/backSnow.css");
+        document.getElementById("wallpaper").setAttribute("href", "backSnow.css");
         document.getElementById("theme").textContent = "火";
     } else {
-        document.getElementById("wallpaper").setAttribute("href", "../CSS/backFire.css");
+        document.getElementById("wallpaper").setAttribute("href", "backFire.css");
         document.getElementById("theme").textContent = "雪";
     }
 }
