@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Raymond Wu  </title>
+        <link rel="stylesheet" href="../CSS/backSnow.css" id="wallpaper">
+        <link rel="stylesheet" href="../CSS/index.css">
+
+        <!-- CHANGE THEME -->
+        <script src="../JS/themeTrack.js"></script>
+
+        <!-- DEFAULT THEME -->
+        <script>
+            let currTheme = localStorage.getItem("currTheme");
+            if(currTheme == null){
+                setTrack("0");
+            } else if(currTheme == "1"){
+                document.getElementById("wallpaper").setAttribute("href", "../CSS/backFire.css");
+                setTrack("1");
+            }
+        </script>
+        
+    </head>
+
+    <body id="whole">
+        <!-- ANIMATION -->
+        <script src="../JS/animate.js"></script>
+
+        <!-- PAGE -->
+        <div class="content">   
+            <h1 class="name">Raymond Wu</h1>
+            <nav>
+                <div class="nav">
+                    <br>
+                    <button id="theme" onclick="changeTheme(currTheme); changeTrack(currTheme)">火</button>
+                    <script>
+                        if(currTheme == "0"){
+                            setTheme("0");
+                        } else {
+                            setTheme("1");
+                        }
+                    </script>
+                </div>
+            </nav>
+        </div>
+
+        <!-- CONTACT HUB -->
+        <div id="contact">
+            <div class="botLink">
+                <a href="https://www.linkedin.com/in/raymond-w-42a6a41b7/" target="_blank">
+                    <img src="../pics/LINKEDIN.png" class="contactLogo">
+                </a>
+            </div>
+            <div class="botLink">
+                <a href="mailto:rayhappyfun@gmail.com">
+                    <img src="../pics/MAIL.png" class="contactLogo">
+                </a>
+            </div>
+            
+        </div>
+        
+
+        
+
+    </body>     
+</html>

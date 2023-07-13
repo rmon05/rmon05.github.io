@@ -1,0 +1,28 @@
+#whole {
+    overflow: hidden;
+  }
+  
+  .content {
+    top: 35%;
+    position: relative;
+  }
+  
+  .name {
+    text-align: center;
+    font-family: "Helvetica", "Lexend", sans-serif;
+    font-size: 4rem;
+  }
+  
+  .nav {
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-family: "Helvetica", "Lexend", sans-serif;
+  }
+  
+  .lnk {
+    text-decoration: none;
+  }
+  
+  .lnk:hover {
+    text-decoration: underline;
+  }/*# sourceMappingURL=index.css.map */
